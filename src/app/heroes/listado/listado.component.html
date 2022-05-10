@@ -1,0 +1,31 @@
+<h1>Listado de heroes</h1>
+<div *ngIf="condicion == true;else noborrado">
+
+    <h2>Heroe borrado</h2>
+    <span *ngFor="let heroe of heroesB;let i =index">
+    <li>{{i+1}} **** {{heroe}}</li>
+    </span>
+</div>
+
+<!--Referencia local en el html si la condicion de arriba no se 
+cumple entonces se cumple el 
+ng template
+-->
+<ng-template #noborrado>
+
+<p>Heroe sin borrar</p>
+</ng-template>
+
+<div> 
+<ul>
+
+<li *ngFor="let heroe of heroes; let i = index"> 
+
+{{i+1}}--{{heroe}}
+
+</li>
+
+</ul>
+
+<button (click)="borrarHeroe()">Borrar Heroe</button>
+</div>   

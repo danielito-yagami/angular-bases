@@ -1,0 +1,26 @@
+<h1>Heroe component in angular</h1>
+<h2>{{nombre}}</h2>
+
+<dl>
+
+<td>nombre:</td>
+<dd>{{nombre}}</dd>
+
+<td>edad:</td>
+<dd>{{edad}}</dd>
+
+
+<td>funcion:</td>
+<dd>{{obtenerN()}}</dd>
+
+
+<td>Capitalizado:</td>
+<dd>{{obtenerN().toUpperCase()}}</dd>
+<dd>{{getNombreCap()}}</dd>
+
+</dl>
+
+<button (click)="cambiarX()">Cambiar heroe</button>
+
+
+<button (click)="cambiarE()">Cambiar edad</button>
